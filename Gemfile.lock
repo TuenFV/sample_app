@@ -69,9 +69,14 @@ GEM
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     ansi (1.5.0)
+    autoprefixer-rails (10.4.2.0)
+      execjs (~> 2)
     bindex (0.8.1)
     bootsnap (1.10.2)
       msgpack (~> 1.2)
+    bootstrap-sass (3.4.1)
+      autoprefixer-rails (>= 5.2.1)
+      sassc (>= 2.0.0)
     builder (3.2.4)
     capybara (3.36.0)
       addressable
@@ -91,6 +96,7 @@ GEM
       reline (>= 0.2.7)
     digest (3.1.0)
     erubi (1.10.0)
+    execjs (2.8.1)
     ffi (1.15.5)
     formatador (1.1.0)
     globalid (1.0.0)
@@ -187,6 +193,10 @@ GEM
       activesupport (= 7.0.1)
       bundler (>= 1.15.0)
       railties (= 7.0.1)
+    rails-controller-testing (1.0.5)
+      actionpack (>= 5.0.1.rc1)
+      actionview (>= 5.0.1.rc1)
+      activesupport (>= 5.0.1.rc1)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
@@ -209,6 +219,8 @@ GEM
     rexml (3.2.5)
     ruby-progressbar (1.11.0)
     rubyzip (2.3.2)
+    sassc (2.4.0)
+      ffi (~> 1.9)
     selenium-webdriver (4.1.0)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
@@ -253,6 +265,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  bootstrap-sass
   capybara
   debug
   guard
@@ -264,6 +277,7 @@ DEPENDENCIES
   pg
   puma (~> 5.0)
   rails (~> 7.0.1)
+  rails-controller-testing
   selenium-webdriver
   sprockets-rails
   sqlite3 (~> 1.4)
