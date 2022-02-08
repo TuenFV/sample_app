@@ -1,7 +1,6 @@
-<p>User error: <%= @user.errors.any? %></p>
+<p>User error: <%= user.errors %></p>
 
 <% if @user.errors.any? %>
-  <% binding.pry %>
   <div id="error_explanation">
     <div class="alert alert-danger">
       The form contains <%= pluralize(@user.errors.count, "error")%>.
