@@ -6,7 +6,6 @@ $white: #fff;
 $gray-light: #777;
 $gray: #555;
 $gray-darker: #222;
-$state-danger-text: #222;
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -108,6 +107,24 @@ footer {
     li {
       float: left;
       margin-left: 15px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  footer {
+    small {
+      display: block;
+      float: none;
+      margin-bottom: 1em;
+    }
+    ul {
+      float: none;
+      padding: 0;
+      li {
+        float: none;
+        margin-left: 0;
+      }
     }
   }
 }
