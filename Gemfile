@@ -21,6 +21,7 @@ gem 'sass-rails'
 gem 'pry'
 
 gem 'bcrypt', '3.1.13'  #To use password_digest
+gem 'faker'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

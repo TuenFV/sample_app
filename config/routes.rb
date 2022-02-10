@@ -4,10 +4,11 @@ Rails.application.routes.draw do
   get '/contact', to: 'static_pages#contact'
     
   get '/signup',     to: 'users#new'
+  get '/edit',       to: 'users#edit'
   
   get '/login',      to: 'sessions#new'
   post '/login',     to: 'sessions#create'
-  get '/logout',  to: 'sessions#destroy'
+  get '/logout',     to: 'sessions#destroy'
   
   resources :users
 
